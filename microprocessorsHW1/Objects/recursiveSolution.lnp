@@ -1,0 +1,8 @@
+--cpu Cortex-M0
+".\objects\recursive.o"
+".\objects\startup_armcm0.o"
+".\objects\system_armcm0.o"
+--strict --scatter ".\RTE\Device\ARMCM0\ARMCM0_ac6.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\recursiveSolution.map" -o .\Objects\recursiveSolution.axf
